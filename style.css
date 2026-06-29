@@ -1,0 +1,649 @@
+/* RESET E IMPOSTAZIONI DI BASE */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #2b2520;
+    background-color: #fdfaf4; 
+}
+
+/* CARATTERE EPICO CINZEL */
+h1, h2, h3, .logo, .main-nav-link, .team-member-name {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 1px;
+}
+
+/* NAVBAR LUXURY BIANCO E ORO */
+.custom-navbar {
+    background-color: rgba(255, 255, 255, 0.96) !important; 
+    border-bottom: 2px solid #dfb84c; 
+    box-shadow: 0 4px 20px rgba(43, 37, 32, 0.05);
+    padding: 15px 0;
+}
+
+.logo {
+    color: #dfb84c !important; 
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.main-nav-link {
+    color: #2b2520 !important;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 20px !important;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.main-nav-link:hover {
+    color: #dfb84c !important;
+}
+
+.dropdown-menu {
+    border-top: 3px solid #dfb84c !important;
+    border-radius: 0 !important;
+    box-shadow: 0px 8px 24px rgba(43, 37, 32, 0.1);
+    background-color: #ffffff;
+    border: 1px solid #e9ddc7;
+    padding: 8px 0 !important;
+}
+
+.dropdown-item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #2b2520 !important;
+    padding: 10px 24px !important;
+    transition: all 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: #fdfaf4 !important;
+    color: #dfb84c !important;
+}
+
+/* HERO SECTION - RIPRISTINATA ORIGINALE (A SCHERMO INTERO) */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url('imagesDodP/HeroImageHeracles.jpg'); /* Ripristinato il tuo file originale */
+    background-size: cover; /* Riempie lo schermo magnificamente */
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25); /* Sottile velo protettivo per far leggere le scritte */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: calc(36px + 3.5vw); 
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #dfb84c; 
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.7); 
+}
+
+.hero-content .subtitle {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: calc(18px + 1vw);
+    color: #ffffff; 
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
+    margin-bottom: 35px;
+}
+
+.greek-pattern-line {
+    width: 140px;
+    height: 3px;
+    background-color: #dfb84c;
+    margin: 0 auto 35px auto;
+}
+
+.btn-scroll {
+    display: inline-block;
+    padding: 14px 40px;
+    background-color: rgba(0, 0, 0, 0.4); 
+    color: #dfb84c;
+    border: 2px solid #dfb84c;
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    backdrop-filter: blur(2px); 
+    transition: all 0.3s ease;
+}
+
+.btn-scroll:hover {
+    background-color: #dfb84c;
+    color: #ffffff;
+}
+
+/* SEZIONI EDITORIALI */
+.custom-section {
+    padding: 120px 0;
+    border-bottom: 1px solid #e9ddc7;
+}
+
+.alt-bg {
+    background-color: #f3e6d3; 
+}
+
+.section-title {
+    font-size: 36px;
+    color: #2b2520;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    border-left: 5px solid #dfb84c;
+    padding-left: 20px;
+}
+
+.lead-text {
+    font-size: 19px;
+    line-height: 1.8;
+    text-align: justify;
+    color: #3a322a;
+}
+
+.subsection h3 {
+    font-size: 22px;
+    color: #2b2520;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #dfb84c; 
+}
+
+.subsection p {
+    font-size: 19px; /* Portato a 19px come la lead-text */
+    text-align: justify;
+    line-height: 1.8; /* Aumentato a 1.8 per una leggibilità perfetta */
+    color: #3a322a;
+}
+
+/* GALLERY CARDS (MUSEUM) */
+.gallery-card {
+    background: transparent !important;
+    padding: 0;
+    border: none !important;
+    box-shadow: none !important;
+    transition: transform 0.3s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-5px);
+}
+
+/* REGOLA PER LE DUE STATUE AFFIANCATE (Hermes e Nike) */
+.gallery-img {
+    border: none !important; /* Rimosso il bordo dorato artificiale */
+    width: 100%;
+    height: 450px; 
+    background-color: transparent !important; /* Rimosso il colore di sfondo */
+    object-fit: contain; 
+}
+
+/* REGOLA SPECIFICA PER LA METOPA (Così non subisce i vincoli delle statue verticali) */
+.metope-img {
+    border: 1px solid #dfb84c;
+    width: 100%;
+    height: auto; /* Lascia che l'immagine mantenga la sua forma panoramica naturale */
+    object-fit: inline;
+}
+
+.img-caption {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: #7a7066;
+    margin-top: 12px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/* ==========================================================================
+   NUOVA SEZIONE TEAM DESIGN (BIANCO, AVORIO E ORO)
+   ========================================================================== */
+.team-card {
+    background: #ffffff;
+    border: 1px solid #e9ddc7;
+    padding: 35px 20px;
+    box-shadow: 0 10px 30px rgba(43, 37, 32, 0.03);
+    transition: all 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    border-color: #dfb84c;
+    box-shadow: 0 15px 35px rgba(223, 184, 76, 0.1);
+}
+
+.team-avatar-container {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+    border: 2px solid #dfb84c;
+    overflow: hidden;
+    background-color: #fdfaf4;
+    padding: 5px;
+}
+
+.team-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.team-member-name {
+    font-size: 18px;
+    color: #2b2520;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+.team-member-role {
+    font-size: 14px;
+    color: #7a7066;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* Stile per le Icone Social dei Membri */
+.team-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon-link {
+    color: #7a7066;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-icon-link:hover {
+    color: #dfb84c;
+    transform: scale(1.15);
+}
+
+/* REGOLA SPECIFICA PER LE IMMAGINI DELLE USER PERSONAS */
+.persona-img {
+    width: 100%;
+    height: auto;
+    max-height: 550px; /* Abbassato da 700px a 550px per renderle più piccoline e graziose */
+    object-fit: contain;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+/* STILE DELLA TABELLA AUDIENCE (BIANCO E ORO) */
+.custom-audience-table {
+    background-color: #ffffff !important;
+    border: 1px solid #e9ddc7 !important;
+    font-size: 16.5px;
+    color: #3a322a;
+}
+
+.custom-audience-table thead th {
+    background-color: #ffffff !important;
+    color: #dfb84c !important; /* Testate colonne color Oro */
+    font-family: 'Cinzel', serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #dfb84c !important;
+    padding: 15px !important;
+    text-align: center;
+}
+
+.custom-audience-table tbody td {
+    padding: 18px 15px !important;
+    border-bottom: 1px solid #e9ddc7 !important;
+    background-color: #ffffff !important;
+}
+
+/* Colonna di sinistra con le metriche */
+.custom-audience-table tbody td.table-metric-name {
+    font-family: 'Roboto', sans-serif;
+    color: #2b2520;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    background-color: #fdfaf4 !important; /* Sfondo avorio leggero solo per la prima colonna */
+    text-align: center;
+}
+
+/* STILE PER LE IMMAGINI DELLE CARTE ASSET/GOALS */
+.asset-card-img {
+    max-height: 180px; /* Altezza contenuta per non renderle troppo grandi */
+    width: auto;
+    object-fit: contain;
+    border-radius: 8px; /* Smussa leggermente gli angoli arrotondati nativi delle carte */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Un'ombra leggerissima per staccarle dallo sfondo */
+}
+
+/* Le carte dei blocchi 2x2 laterali */
+.target-card-img {
+    max-height: 115px; /* Un pelo più compatte così la colonna da 6 carte si allinea al testo */
+    width: 100%;
+    object-fit: contain;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+/* La fila da 6 finale (Capabilities e Devices) */
+.common-tech-img {
+    max-height: 120px; /* Più piccoline così da stare perfettamente su un'unica linea orizzontale nei PC */
+    width: auto;
+    object-fit: contain;
+    padding: 2px;
+}
+
+/* GRIGLIA RELATED WORKS OTTIMIZZATA */
+.img-wrapper {
+    width: 100%;
+    height: 220px; /* Alza il limite verticale per ingrandirle significativamente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.related-game-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Mantiene le proporzioni originali senza tagliare i dettagli */
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08); /* Ombra leggermente più accentuata visto che sono più grandi */
+    transition: all 0.3s ease;
+}
+
+/* Effetto di hover coordinato per la card */
+.related-card:hover .related-game-img {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.small-caption {
+    font-size: 0.95rem;
+    color: #444;
+    font-weight: 600;
+    margin-top: auto; /* Spinge il testo sempre sul fondo per un allineamento perfetto */
+}
+
+/* REGOLE SPECIFICHE PER LA SEZIONE THE GAME */
+
+/* 1. Wrapper per le 5 carte personaggio (proporzione orizzontale) */
+.char-card-wrapper {
+    width: 100%;
+    aspect-ratio: 3 / 2; /* Mantiene la perfetta proporzione landscape delle carte fornite */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.character-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.char-card-wrapper:hover {
+    transform: scale(1.05);
+}
+
+/* 2. Wrapper per i 3 componenti finali (Grandi e distanziati) */
+.board-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.game-component-img {
+    max-height: 280px; /* Altezza generosa per valorizzare i dettagli dei tabelloni */
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease;
+}
+
+.game-component-img:hover {
+    transform: translateY(-6px);
+}
+
+/* STILE TABELLA CORE ATTRIBUTES - PALETTE UFFICIALE SITO */
+.table-responsive {
+    border: 1px solid #e9ddc7 !important; /* Bordo esterno beige coordinato */
+    border-radius: 8px;
+}
+
+.table {
+    margin-bottom: 0 !important;
+    background-color: #ffffff !important;
+}
+
+/* Intestazione della tabella (Oro principale del sito con testo bianco) */
+.table thead th {
+    background-color: #dfb84c !important; 
+    color: #ffffff !important;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 14px;
+    border-bottom: 2px solid #e9ddc7 !important;
+}
+
+/* Righe alternate (Effetto zebrato soft usando il beige chiaro del sito) */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #fdfaf4 !important; /* Il tuo beige caldo di sfondo */
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #ffffff !important; /* Bianco pulito */
+}
+
+/* Colonna dei Nomi degli Eroi (Sfondo leggermente più marcato con il beige dei bordi) */
+.table tbody th {
+    background-color: #e9ddc7 !important; 
+    color: #2b2520 !important; /* Colore scuro caldo (preso dall'ombra delle tue card) */
+    font-weight: 600;
+    border-right: 1px solid #e9ddc7 !important;
+}
+
+/* Celle dei punteggi */
+.table tbody td {
+    color: #2b2520 !important;
+    padding: 12px;
+    border-color: rgba(233, 221, 199, 0.4) !important; /* Bordi interni usando il beige con trasparenza */
+}
+
+/* Evidenziazione dei punteggi massimi (in grassetto con l'oro del sito) */
+.table tbody td strong {
+    color: #dfb84c !important; 
+    font-size: 1.15rem;
+}
+
+/* CARTE PERIL & AID DECK */
+.deck-card-wrapper {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    background-color: #fdfdfd;
+}
+.deck-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.grayscale-placeholder {
+    filter: grayscale(100%) opacity(40%); /* Rende temporaneamente grigie le immagini placeholder fino a quando non metti quelle giuste */
+}
+
+/* BOTTONE INSTRUCTIONS TRANSITION */
+.transition-btn {
+    font-weight: 600;
+    border-width: 2px;
+    transition: all 0.3s ease;
+}
+.transition-btn:hover {
+    background-color: #212529;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1) !important;
+}
+
+/* CONTAINER E LOGICA PER IL GAME FLOWCHART */
+.flowchart-container {
+    background-color: #ffffff;
+    border: 1px solid #e9ddc7; /* Usa lo stesso beige morbido dei bordi delle tue card */
+    box-shadow: 0 5px 20px rgba(43, 37, 32, 0.02);
+    transition: transform 0.3s ease;
+}
+
+.flowchart-container:hover {
+    transform: translateY(-3px);
+    border-color: #dfb84c; /* Cambia nel tuo oro principale quando ci si passa sopra */
+}
+
+.flowchart-img {
+    width: 100%;
+    height: auto;
+    max-height: 550px; /* Evita che l'immagine diventi gigantesca su schermi enormi */
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.small-caption {
+    font-size: 0.9rem;
+    color: #2b2520;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* STILE RIGUARDO LO USER JOURNEY */
+.journey-card {
+    background: #ffffff;
+    border: 1px solid #e9ddc7; /* Il tuo beige ufficiale dei bordi */
+    padding: 30px 20px;
+    height: 100%;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(43, 37, 32, 0.02);
+    transition: all 0.3s ease;
+}
+
+.journey-card:hover {
+    transform: translateY(-5px);
+    border-color: #dfb84c; /* Il tuo oro ufficiale */
+    box-shadow: 0 15px 35px rgba(223, 184, 76, 0.08);
+}
+
+/* Titoli delle fasi in oro del sito */
+.journey-phase-title {
+    color: #dfb84c !important;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+}
+
+/* Numerino badge sopra ogni fase */
+.journey-badge {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    width: 32px;
+    height: 32px;
+    background-color: #dfb84c; /* Sfondo Oro */
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 10px rgba(223, 184, 76, 0.2);
+}
+
+/* Dimensionamento font per paragrafi affiancati */
+.lead-text-small {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #2b2520;
+    margin-bottom: 0;
+}
+
+/* Stile per i titoli in oro nel testo dello User Journey */
+.journey-gold-title {
+    color: #dfb84c !important;
+    font-family: 'Cinzel', serif; /* Mantiene il carattere epico del sito */
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* Rende le due statue verticali armoniose ed evidenti */
+.custom-museum-img-v {
+    max-height: 350px; /* Altezza massima per non farle sgranare o eccedere */
+    width: auto;
+    object-fit: contain;
+}
+
+/* Gestisce la foto orizzontale al centro */
+.custom-museum-img-h {
+    max-height: 350px; /* Identica altezza massima per allinearle visivamente */
+    width: 100%;
+    object-fit: cover; /* Riempie bene le 6 colonne centrali mantenendo l'altezza */
+}
+
+/* Stile per le didascalie */
+.caption-text {
+    font-size: 10px;
+    color: #555;
+    font-style: italic;
+}
+
+/* Sblocca le transizioni di AOS se sovrascritte da altri stili */
+[data-aos] {
+    pointer-events: none;
+}
+[data-aos].aos-animate {
+    pointer-events: auto;
+}
