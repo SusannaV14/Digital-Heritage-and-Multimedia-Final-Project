@@ -1,4 +1,4 @@
-/* RESET E IMPOSTAZIONI DI BASE */
+/* RESET AND BASIC SETTINGS */
 html {
     scroll-behavior: smooth;
 }
@@ -9,13 +9,13 @@ body {
     background-color: #fdfaf4; 
 }
 
-/* CARATTERE EPICO CINZEL */
+/* EPIC FONT CINZEL */
 h1, h2, h3, .logo, .main-nav-link, .team-member-name {
     font-family: 'Cinzel', serif;
     letter-spacing: 1px;
 }
 
-/* NAVBAR LUXURY BIANCO E ORO */
+/* NAVBAR LUXURY WHITE AND GOLD */
 .custom-navbar {
     background-color: rgba(255, 255, 255, 0.96) !important; 
     border-bottom: 2px solid #dfb84c; 
@@ -72,13 +72,13 @@ h1, h2, h3, .logo, .main-nav-link, .team-member-name {
     color: #dfb84c !important;
 }
 
-/* HERO SECTION - RIPRISTINATA ORIGINALE (A SCHERMO INTERO) */
+/* HERO SECTION */
 .hero-section {
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: url('imagesDodP/HeroImageHeracles.jpg'); /* Ripristinato il tuo file originale */
-    background-size: cover; /* Riempie lo schermo magnificamente */
+    background-image: url('imagesDodP/HeroImageHeracles.jpg');
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     z-index: 1;
@@ -90,7 +90,7 @@ h1, h2, h3, .logo, .main-nav-link, .team-member-name {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.25); /* Sottile velo protettivo per far leggere le scritte */
+    background: rgba(0, 0, 0, 0.25);
     z-index: 1;
 }
 
@@ -145,7 +145,7 @@ h1, h2, h3, .logo, .main-nav-link, .team-member-name {
     color: #ffffff;
 }
 
-/* SEZIONI EDITORIALI */
+/* SECTIONS */
 .custom-section {
     padding: 120px 0;
     border-bottom: 1px solid #e9ddc7;
@@ -182,9 +182,9 @@ h1, h2, h3, .logo, .main-nav-link, .team-member-name {
 }
 
 .subsection p {
-    font-size: 19px; /* Portato a 19px come la lead-text */
+    font-size: 19px; 
     text-align: justify;
-    line-height: 1.8; /* Aumentato a 1.8 per una leggibilità perfetta */
+    line-height: 1.8;
     color: #3a322a;
 }
 
@@ -201,7 +201,7 @@ h1, h2, h3, .logo, .main-nav-link, .team-member-name {
     transform: translateY(-5px);
 }
 
-/* REGOLA PER LE DUE STATUE AFFIANCATE (Hermes e Nike) */
+/*Hermes and Nike */
 .gallery-img {
     border: none !important; /* Rimosso il bordo dorato artificiale */
     width: 100%;
@@ -210,11 +210,11 @@ h1, h2, h3, .logo, .main-nav-link, .team-member-name {
     object-fit: contain; 
 }
 
-/* REGOLA SPECIFICA PER LA METOPA (Così non subisce i vincoli delle statue verticali) */
+/* METOPE IMAGE */
 .metope-img {
     border: 1px solid #dfb84c;
     width: 100%;
-    height: auto; /* Lascia che l'immagine mantenga la sua forma panoramica naturale */
+    height: auto; 
     object-fit: inline;
 }
 
@@ -229,7 +229,7 @@ h1, h2, h3, .logo, .main-nav-link, .team-member-name {
 }
 
 /* ==========================================================================
-   NUOVA SEZIONE TEAM DESIGN (BIANCO, AVORIO E ORO)
+   TEAM SECTION
    ========================================================================== */
 .team-card {
     background: #ffffff;
@@ -277,7 +277,7 @@ h1, h2, h3, .logo, .main-nav-link, .team-member-name {
     margin-bottom: 20px;
 }
 
-/* Stile per le Icone Social dei Membri */
+/* ICONS OF TEAM MEMBERS */
 .team-social-links {
     display: flex;
     justify-content: center;
@@ -294,82 +294,46 @@ h1, h2, h3, .logo, .main-nav-link, .team-member-name {
     transform: scale(1.15);
 }
 
-/* REGOLA SPECIFICA PER LE IMMAGINI DELLE USER PERSONAS */
+/* RULES FOR USER PERSONAS IMAGES */
 .persona-img {
     width: 100%;
     height: auto;
-    max-height: 550px; /* Abbassato da 700px a 550px per renderle più piccoline e graziose */
+    max-height: 550px; 
     object-fit: contain;
     background-color: transparent !important;
     border: none !important;
 }
 
-/* STILE DELLA TABELLA AUDIENCE (BIANCO E ORO) */
-.custom-audience-table {
-    background-color: #ffffff !important;
-    border: 1px solid #e9ddc7 !important;
-    font-size: 16.5px;
-    color: #3a322a;
-}
-
-.custom-audience-table thead th {
-    background-color: #ffffff !important;
-    color: #dfb84c !important; /* Testate colonne color Oro */
-    font-family: 'Cinzel', serif;
-    font-size: 15px;
-    text-transform: uppercase;
-    border-bottom: 2px solid #dfb84c !important;
-    padding: 15px !important;
-    text-align: center;
-}
-
-.custom-audience-table tbody td {
-    padding: 18px 15px !important;
-    border-bottom: 1px solid #e9ddc7 !important;
-    background-color: #ffffff !important;
-}
-
-/* Colonna di sinistra con le metriche */
-.custom-audience-table tbody td.table-metric-name {
-    font-family: 'Roboto', sans-serif;
-    color: #2b2520;
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    background-color: #fdfaf4 !important; /* Sfondo avorio leggero solo per la prima colonna */
-    text-align: center;
-}
-
-/* STILE PER LE IMMAGINI DELLE CARTE ASSET/GOALS */
+/* STYLE FOR ASSETS AND GOALS CARDS */
 .asset-card-img {
-    max-height: 180px; /* Altezza contenuta per non renderle troppo grandi */
+    max-height: 180px; 
     width: auto;
     object-fit: contain;
-    border-radius: 8px; /* Smussa leggermente gli angoli arrotondati nativi delle carte */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Un'ombra leggerissima per staccarle dallo sfondo */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
 }
 
-/* Le carte dei blocchi 2x2 laterali */
+/* MOTIVATIONS, BARRIES AND AUDIENCE GOALS CARDS   */
 .target-card-img {
-    max-height: 115px; /* Un pelo più compatte così la colonna da 6 carte si allinea al testo */
+    max-height: 115px; 
     width: 100%;
     object-fit: contain;
     border-radius: 6px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    box-shadow: 0 2px 6px rgba(0,0,0,0);
 }
 
-/* La fila da 6 finale (Capabilities e Devices) */
+/* Capabilities and Devices CARDS */
 .common-tech-img {
-    max-height: 120px; /* Più piccoline così da stare perfettamente su un'unica linea orizzontale nei PC */
+    max-height: 120px; 
     width: auto;
     object-fit: contain;
     padding: 2px;
 }
 
-/* GRIGLIA RELATED WORKS OTTIMIZZATA */
+/* RELATED WORKS */
 .img-wrapper {
     width: 100%;
-    height: 220px; /* Alza il limite verticale per ingrandirle significativamente */
+    height: 220px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -379,13 +343,13 @@ h1, h2, h3, .logo, .main-nav-link, .team-member-name {
 .related-game-img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain; /* Mantiene le proporzioni originali senza tagliare i dettagli */
+    object-fit: contain; 
     border-radius: 8px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08); /* Ombra leggermente più accentuata visto che sono più grandi */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08); 
     transition: all 0.3s ease;
 }
 
-/* Effetto di hover coordinato per la card */
+/* hover cards */
 .related-card:hover .related-game-img {
     transform: translateY(-8px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
@@ -398,12 +362,12 @@ h1, h2, h3, .logo, .main-nav-link, .team-member-name {
     margin-top: auto; /* Spinge il testo sempre sul fondo per un allineamento perfetto */
 }
 
-/* REGOLE SPECIFICHE PER LA SEZIONE THE GAME */
+/* RULES FOR THE GAME SECTION */
 
-/* 1. Wrapper per le 5 carte personaggio (proporzione orizzontale) */
+/* 1. Wrapper for the 5 characters cards */
 .char-card-wrapper {
     width: 100%;
-    aspect-ratio: 3 / 2; /* Mantiene la perfetta proporzione landscape delle carte fornite */
+    aspect-ratio: 3 / 2; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -423,7 +387,7 @@ h1, h2, h3, .logo, .main-nav-link, .team-member-name {
     transform: scale(1.05);
 }
 
-/* 2. Wrapper per i 3 componenti finali (Grandi e distanziati) */
+/* 2. Wrapper fot the 3 final cards */
 .board-card {
     display: flex;
     flex-direction: column;
@@ -432,7 +396,7 @@ h1, h2, h3, .logo, .main-nav-link, .team-member-name {
 }
 
 .game-component-img {
-    max-height: 280px; /* Altezza generosa per valorizzare i dettagli dei tabelloni */
+    max-height: 280px; 
     width: auto;
     max-width: 100%;
     object-fit: contain;
@@ -445,9 +409,9 @@ h1, h2, h3, .logo, .main-nav-link, .team-member-name {
     transform: translateY(-6px);
 }
 
-/* STILE TABELLA CORE ATTRIBUTES - PALETTE UFFICIALE SITO */
+/* STYLE CORE ATTRIBUTES TABLE */
 .table-responsive {
-    border: 1px solid #e9ddc7 !important; /* Bordo esterno beige coordinato */
+    border: 1px solid #e9ddc7 !important; 
     border-radius: 8px;
 }
 
@@ -456,7 +420,7 @@ h1, h2, h3, .logo, .main-nav-link, .team-member-name {
     background-color: #ffffff !important;
 }
 
-/* Intestazione della tabella (Oro principale del sito con testo bianco) */
+/* Table head */
 .table thead th {
     background-color: #dfb84c !important; 
     color: #ffffff !important;
@@ -466,37 +430,37 @@ h1, h2, h3, .logo, .main-nav-link, .team-member-name {
     border-bottom: 2px solid #e9ddc7 !important;
 }
 
-/* Righe alternate (Effetto zebrato soft usando il beige chiaro del sito) */
+/* Rows */
 .table-striped tbody tr:nth-of-type(odd) {
-    background-color: #fdfaf4 !important; /* Il tuo beige caldo di sfondo */
+    background-color: #fdfaf4 !important;
 }
 
 .table-striped tbody tr:nth-of-type(even) {
-    background-color: #ffffff !important; /* Bianco pulito */
+    background-color: #ffffff !important;
 }
 
-/* Colonna dei Nomi degli Eroi (Sfondo leggermente più marcato con il beige dei bordi) */
+/* Colums of Heros' Names */
 .table tbody th {
     background-color: #e9ddc7 !important; 
-    color: #2b2520 !important; /* Colore scuro caldo (preso dall'ombra delle tue card) */
+    color: #2b2520 !important;
     font-weight: 600;
     border-right: 1px solid #e9ddc7 !important;
 }
 
-/* Celle dei punteggi */
+/* Cells of core attributes */
 .table tbody td {
     color: #2b2520 !important;
     padding: 12px;
     border-color: rgba(233, 221, 199, 0.4) !important; /* Bordi interni usando il beige con trasparenza */
 }
 
-/* Evidenziazione dei punteggi massimi (in grassetto con l'oro del sito) */
+/* Highlight of maximum attribute */
 .table tbody td strong {
     color: #dfb84c !important; 
     font-size: 1.15rem;
 }
 
-/* CARTE PERIL & AID DECK */
+/* PERIL & AID DECK */
 .deck-card-wrapper {
     width: 100%;
     aspect-ratio: 2 / 3;
@@ -514,10 +478,10 @@ h1, h2, h3, .logo, .main-nav-link, .team-member-name {
     object-fit: cover;
 }
 .grayscale-placeholder {
-    filter: grayscale(100%) opacity(40%); /* Rende temporaneamente grigie le immagini placeholder fino a quando non metti quelle giuste */
+    filter: grayscale(100%) opacity(40%); /* Temporary */
 }
 
-/* BOTTONE INSTRUCTIONS TRANSITION */
+/*  INSTRUCTIONS BOTTON */
 .transition-btn {
     font-weight: 600;
     border-width: 2px;
@@ -530,23 +494,23 @@ h1, h2, h3, .logo, .main-nav-link, .team-member-name {
     box-shadow: 0 6px 15px rgba(0,0,0,0.1) !important;
 }
 
-/* CONTAINER E LOGICA PER IL GAME FLOWCHART */
+/* CONTAINER GAME FLOWCHART */
 .flowchart-container {
     background-color: #ffffff;
-    border: 1px solid #e9ddc7; /* Usa lo stesso beige morbido dei bordi delle tue card */
+    border: 1px solid #e9ddc7;
     box-shadow: 0 5px 20px rgba(43, 37, 32, 0.02);
     transition: transform 0.3s ease;
 }
 
 .flowchart-container:hover {
     transform: translateY(-3px);
-    border-color: #dfb84c; /* Cambia nel tuo oro principale quando ci si passa sopra */
+    border-color: #dfb84c;  
 }
 
 .flowchart-img {
     width: 100%;
     height: auto;
-    max-height: 550px; /* Evita che l'immagine diventi gigantesca su schermi enormi */
+    max-height: 550px; 
     object-fit: contain;
     border-radius: 4px;
 }
@@ -558,58 +522,7 @@ h1, h2, h3, .logo, .main-nav-link, .team-member-name {
     opacity: 0.8;
 }
 
-/* STILE RIGUARDO LO USER JOURNEY */
-.journey-card {
-    background: #ffffff;
-    border: 1px solid #e9ddc7; /* Il tuo beige ufficiale dei bordi */
-    padding: 30px 20px;
-    height: 100%;
-    position: relative;
-    border-radius: 6px;
-    box-shadow: 0 10px 30px rgba(43, 37, 32, 0.02);
-    transition: all 0.3s ease;
-}
-
-.journey-card:hover {
-    transform: translateY(-5px);
-    border-color: #dfb84c; /* Il tuo oro ufficiale */
-    box-shadow: 0 15px 35px rgba(223, 184, 76, 0.08);
-}
-
-/* Titoli delle fasi in oro del sito */
-.journey-phase-title {
-    color: #dfb84c !important;
-    font-size: 1.2rem;
-    letter-spacing: 0.5px;
-}
-
-/* Numerino badge sopra ogni fase */
-.journey-badge {
-    position: absolute;
-    top: -15px;
-    left: 20px;
-    width: 32px;
-    height: 32px;
-    background-color: #dfb84c; /* Sfondo Oro */
-    color: #ffffff;
-    font-weight: bold;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.95rem;
-    box-shadow: 0 4px 10px rgba(223, 184, 76, 0.2);
-}
-
-/* Dimensionamento font per paragrafi affiancati */
-.lead-text-small {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: #2b2520;
-    margin-bottom: 0;
-}
-
-/* Stile per i titoli in oro nel testo dello User Journey */
+/* STYLE USER JOURNEY TITLES */
 .journey-gold-title {
     color: #dfb84c !important;
     font-family: 'Cinzel', serif; /* Mantiene il carattere epico del sito */
@@ -619,31 +532,47 @@ h1, h2, h3, .logo, .main-nav-link, .team-member-name {
     margin-right: 5px;
 }
 
-/* Rende le due statue verticali armoniose ed evidenti */
+/* Hermes and Nike images */
 .custom-museum-img-v {
-    max-height: 350px; /* Altezza massima per non farle sgranare o eccedere */
+    max-height: 350px;
     width: auto;
     object-fit: contain;
 }
 
-/* Gestisce la foto orizzontale al centro */
+/* Archeological site image */
 .custom-museum-img-h {
-    max-height: 350px; /* Identica altezza massima per allinearle visivamente */
+    max-height: 350px; 
     width: 100%;
-    object-fit: cover; /* Riempie bene le 6 colonne centrali mantenendo l'altezza */
+    object-fit: cover; 
 }
 
-/* Stile per le didascalie */
+/* Caption style */
 .caption-text {
     font-size: 10px;
     color: #555;
     font-style: italic;
 }
 
-/* Sblocca le transizioni di AOS se sovrascritte da altri stili */
-[data-aos] {
-    pointer-events: none;
+/* ==========================================================================
+   FOOTER STYLE
+   ========================================================================== */
+footer {
+    background-color: transparent !important; 
+    border-top: 1px solid #c5a880;            
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.5px;
 }
-[data-aos].aos-animate {
-    pointer-events: auto;
+
+footer p {
+    color: #2b2b2b;
+}
+
+footer .text-muted {
+    color: #6c757d !important;
+    font-size: 0.85rem;
+}
+
+footer strong {
+    color: #c5a880;
+    font-variant: small-caps; 
 }
