@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dodékathlos - A Phigital Board Game</title>
+    <title>Dodékathlos - A Hybrid Board Game</title>
     
     <link rel="stylesheet" href="bootstrap.min.css">
     
@@ -11,6 +11,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Cinzel:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -70,7 +71,7 @@
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1>Dodékathlos</h1>
-            <p class="subtitle">A Phigital Board Game</p>
+            <p class="subtitle">A Hybrid Board Game</p>
             <div class="greek-pattern-line"></div>
             <a href="#introduction" class="btn-scroll">Explore the Myth</a>
         </div>
@@ -78,20 +79,21 @@
 
     <main>
         <!-- SECTION: INTRODUCTION -->
-        <section id="introduction" class="custom-section" data-aos="fade-up">
+        <section id="introduction" class="custom-section reveal">
             
             <div class="container">
                 <h2 class="section-title">Introduction</h2>
                 <div class="row">
                     <div class="col-12">
-                        <p class="lead-text"><strong>Dodékathlos</strong> is an innovative phigital board game that seamlessly integrates physical components with digital tools. This project was developed as the final examination for the <em>Digital Heritage and Multimedia</em> course, within the Master's Degree in <em>Digital Humanities and Digital Knowledge</em> (DHDK) at the <strong>University of Bologna</strong>.</p>
-                        <p class="lead-text">Inspired by the legendary Twelve Labors of Heracles, the game is uniquely designed to serve as both an engaging and educational activity tailored for the <strong>Archaeological Museum of Olympia</strong>. Before crafting the core gameplay and interaction mechanics, our team conducted an in-depth museum analysis to align the experience with the venue's rich heritage.</p>
+                        <p class="lead-text"><strong>Dodékathlos</strong> is an innovative board game that seamlessly integrates physical components with digital tools. This project was developed as the final examination for the <em>Digital Heritage and Multimedia</em> course, within the Master's Degree in <em>Digital Humanities and Digital Knowledge</em> (DHDK) at the <strong>University of Bologna</strong>.</p>
+                        <p class="lead-text">Inspired by the legendary Twelve Labors of Hercules, the game is uniquely designed to serve as both an engaging and educational activity tailored for the <strong>Archaeological Museum of Olympia</strong>. Before crafting the core gameplay and interaction mechanics, our team conducted an in-depth museum analysis to align the experience with the venue's rich heritage.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="context" class="custom-section alt-bg">
+        <!-- SECTION: PRELIMINARY INVESTIGATION -->
+        <section id="context" class="custom-section reveal reveal-bottom alt-bg">
             <div class="container">
                 <h2 class="section-title">Preliminary Investigation</h2>
                 
@@ -103,32 +105,32 @@
                       <div class="row g-4 justify-content-center align-items-center mt-4">
     
                       <!-- 1. HERMES OF PRAXITELES -->
-                      <div class="col-md-3 text-center">
+                      <div class="col-md-3 text-center reveal reveal-left">
                          <img src="imagesDodP/HermesOfPraxiteles2.jpg" class="img-fluid rounded shadow-sm custom-museum-img-v" alt="Hermes of Praxiteles">
                          <p class="img-caption"><em>Hermes of Praxiteles</em></p>
                       </div>
 
                       <!-- 2. ARCHEOLOGICAL SITE OF OLYMPIA -->
-                      <div class="col-md-6 text-center">
+                      <div class="col-md-6 text-center reveal reveal-zoom">
                          <img src="imagesDodP/sitoArcheologico.jpg" class="img-fluid rounded shadow-sm custom-museum-img-h" alt="Archaeological Site of Olympia">
                          <p class="img-caption"><em>Archaeological Site of Olympia</em></p>
                       </div>
 
                       <!-- 3. NIKE OF PAIONIOS -->
-                      <div class="col-md-3 text-center">
+                      <div class="col-md-3 text-center reveal reveal-right">
                          <img src="imagesDodP/Nike.jpg" class="img-fluid rounded shadow-sm custom-museum-img-v" alt="Nike of Paionios">
                          <p class="img-caption"><em>Nike of Paionios</em></p>
                       </div>
 
                       </div>
                       <p></p>
-                      <p>Of particular significance to our project are the monumental remnants of the sculpted metopes from the ancient <strong>Temple of Zeus</strong>. These masterpieces vividly depict the <strong>Twelve Labors of Heracles</strong>. Interestingly, the architectural structure of this temple is believed to be the historical reason why the canon of Heracles' exploits was fixed at exactly twelve, as Greek mythology actually records numerous other heroic deeds performed by the demigod.</p>
+                      <p>Of particular significance to our project are the monumental remnants of the sculpted metopes from the ancient <strong>Temple of Zeus</strong>. These masterpieces vividly depict the <strong>Twelve Labors of Hercules</strong>. Interestingly, the architectural structure of this temple is believed to be the historical reason why the canon of Hercules' exploits was fixed at exactly twelve, as Greek mythology actually records numerous other heroic deeds performed by the demigod.</p>
     
                       <div class="row my-4 justify-content-center">
-                      <div class="col-12 col-md-8 text-center">
+                      <div class="col-12 col-md-8 text-center reveal reveal-zoom">
                       <div class="gallery-card">
-                         <img src="imagesDodP/Metope.jpg" alt="Metopes of the Temple of Zeus" class="img-fluid metope-img">
-                         <p class="img-caption">Metopes of the Temple of Zeus (Heracles and the Cretan Bull)</p>
+                         <img src="imagesDodP/2metopes.jpg" alt="Metopes of the Temple of Zeus" class="img-fluid metope-img">
+                         <p class="img-caption">Metopes of the Temple of Zeus (Apples of the Hesperides and the Cretan Bull)</p>
                      </div>
                      </div>
                      </div>
@@ -137,7 +139,7 @@
                      <div class="col-12 col-lg-8">
                         <p>The <strong>star assets</strong> of the museum are the <strong>fame</strong> that it has and the importance of the <strong>exhibition</strong> itself for the History of Art and History in general. In fact, this institution is well-known worldwide and it does not seem to need more publicity: visitors and tourists come from all over the world, attracted by the sculptures, the excavations, the old stadium, and the olive tree that anyone into sports recognizes as the place where the <strong>Olympic Flame</strong> is lit up still now.</p>
                      </div>
-                     <div class="col-12 col-lg-4">
+                     <div class="col-12 col-lg-4 reveal reveal-right">
                      <div class="d-flex justify-content-center gap-3">
                         <img src="imagesDodP/fame.jpg" alt="Museum Asset - Fame" class="img-fluid asset-card-img">
                         <img src="imagesDodP/exhibits.jpeg" alt="Museum Asset - Exhibits" class="img-fluid asset-card-img">
@@ -149,7 +151,7 @@
                      <div class="col-12 col-lg-8">
                         <p>The <strong>institutional goals</strong> that we have detected involve more <strong>interaction with visitors</strong> and to enlarge the number of proposals of <strong>educational activities</strong>. Despite being famous and important, the visit is currently confined to a "look and move on" dynamic: visitors cannot do anything more than observe the artifacts and the corresponding labels. Connected to this, while there are some activities for school groups, their primary audience consists of elementary school children, whereas our project is specifically designed for slightly older <strong>middle school teenagers</strong>.</p>
                      </div>
-                     <div class="col-12 col-lg-4">
+                     <div class="col-12 col-lg-4 reveal reveal-left">
                      <div class="d-flex justify-content-center gap-3">
                         <img src="imagesDodP/visitorPartecipation.jpeg" alt="Goal - Increase Visitor Participation" class="img-fluid asset-card-img">
                         <img src="imagesDodP/increaseedact.jpeg" alt="Goal - Increase Educational Activities" class="img-fluid asset-card-img">
@@ -157,7 +159,7 @@
                      </div>
                 </div>
 
-                <div id="audience" class="subsection mb-5"> <!--The Audience section-->
+                <div id="audience" class="subsection mb-5 reveal"> <!--The Audience section-->
                     <h3>The Audience</h2>
                      <div class="row g-5 align-items-center mb-5">
                      <div class="col-12 col-lg-7">
@@ -168,7 +170,7 @@
                             However, this audience can face significant psychological barriers, such as <strong>low self-esteem</strong>, or they might initially find the museum's traditional display <strong>irrelevant</strong> to their daily lives. This is a critical age group, and our project aims to break these friction points to raise genuine interest.
                         </p>
                      </div>
-                     <div class="col-12 col-lg-5 text-center">
+                     <div class="col-12 col-lg-5 text-center reveal reveal-right">
                      <div class="row g-2 justify-content-center">
                         <div class="col-6"><img src="imagesDodP/SocialInteractions.jpg" alt="Primary Motivation 1" class="img-fluid target-card-img"></div>
                         <div class="col-6"><img src="imagesDodP/Entertainment.jpg" alt="Primary Motivation 2" class="img-fluid target-card-img"></div>
@@ -192,7 +194,7 @@
                             For this audience, the goals consist of <strong>feedback between visitors and environment</strong> and <strong>stimulate emotional responses</strong>: the game should add something to the plain visit and make good memories about the museum while interacting with the environment and the others.
                         </p>
                     </div>
-                    <div class="col-12 col-lg-5 text-center">
+                    <div class="col-12 col-lg-5 text-center reveal reveal-left">
                     <div class="row g-2 justify-content-center">
                         <div class="col-6"><img src="imagesDodP/PersonalRelevance.jpg" alt="Secondary Motivation 1" class="img-fluid target-card-img"></div>
                         <div class="col-6"><img src="imagesDodP/AcademicInterest.jpg" alt="Secondary Motivation 2" class="img-fluid target-card-img"></div>
@@ -208,7 +210,7 @@
                         <p class="lead-text mt-3">
                         For both audiences there are no special capabilities to learn: <strong>computer softwares, gaming mechanics and mobile apps</strong> are sufficient. They both are able to handle devices like <strong>computers, tablets and smartphones</strong>.
                         </p>
-                    <div class="row g-1 justify-content-center align-items-center p-3">
+                    <div class="row g-1 justify-content-center align-items-center p-3 reveal reveal-zoom">
                         <div class="col-4 col-md-2 text-center"><img src="imagesDodP/ComputerGaming.jpg" alt="Computer Gaming" class="img-fluid common-tech-img"></div>
                         <div class="col-4 col-md-2 text-center"><img src="imagesDodP/ComputerSoftware.jpg" alt="Computer Software" class="img-fluid common-tech-img"></div>
                         <div class="col-4 col-md-2 text-center"><img src="imagesDodP/MobileApps.jpg" alt="Mobile Apps" class="img-fluid common-tech-img"></div>
@@ -224,14 +226,14 @@
                 
                     <div class="row g-5 justify-content-center align-items-stretch mt-3">
                     <div class="col-12 col-md-5 text-center">
-                        <div class="gallery-card">
+                        <div class="gallery-card reveal reveal-zoom">
                             <img src="imagesDodP/NikosVlachos.jpeg" alt="User Persona - Nikos Vlachos" class="img-fluid persona-img">
                             <p class="img-caption mt-3"><strong>Nikos Vlachos</strong> – Primary Audience Profile (Middle School Student)</p>
                         </div>
                     </div>
                     
                     <div class="col-12 col-md-5 text-center">
-                        <div class="gallery-card">
+                        <div class="gallery-card reveal reveal-zoom">
                             <img src="imagesDodP/AliceHarrison.jpeg" alt="User Persona - Alice Harrison" class="img-fluid persona-img">
                             <p class="img-caption mt-3"><strong>Alice Harrison</strong> – Secondary Audience Profile (History Student & Board Gamer)</p>
                         </div>
@@ -241,12 +243,12 @@
                 </div> <!--End of The Audience-->
 
                 <!-- RELATED WORKS SECTION -->
-                <div id="related-works" class="subsection mb-5">
+                <div id="related-works" class="subsection mb-5 reveal">
                     <h3>Related Works</h3>
                     <div class="row mb-5">
                     <div class="col-12">
                         <p class="lead-text">
-                            Before developing our project, we conducted extensive market research on existing games centered around <strong>Heracles and Greek mythology</strong>. Our goal was to understand the state of the art and pinpoint what unique value our game could bring to the table. During this phase, we analyzed several prominent titles, including <strong>Elysium</strong>, <strong>Mythomakya</strong>, <strong>Micro Heroes: Hercules</strong>, and <strong>Hercules and the 12 Labours</strong>.
+                            Before developing our project, we conducted extensive market research on existing games centered around <strong>Hercules and Greek mythology</strong>. Our goal was to understand the state of the art and pinpoint what unique value our game could bring to the table. During this phase, we analyzed several prominent titles, including <strong>Elysium</strong>, <strong>Mythomakya</strong>, <strong>Micro Heroes: Hercules</strong>, and <strong>Hercules and the 12 Labours</strong>.
                         </p>
                         <p class="lead-text mt-3">
                             Although Greek mythology serves as a foundational theme in many modern games, we noticed that very few actually feature Hercules as their main protagonist. Furthermore, almost none of them delve into the depth of his original myth; instead, Hercules is often treated merely as a generic, strong hero. Most importantly, the archaeological aspect and material sources are completely discarded. Our game is specifically designed to bridge this gap, integrating tangible historical education directly into the core gameplay loop.
@@ -260,7 +262,7 @@
                     <div class="row g-5 justify-content-center align-items-stretch mt-5">
                     <!-- Image 1: Mythomakya -->
                     <div class="col-12 col-md-4 text-center">
-                        <div class="related-card h-100 d-flex flex-column justify-content-between">
+                        <div class="related-card h-100 d-flex flex-column justify-content-between reveal reveal-left">
                             <div class="img-wrapper mb-3">
                                 <img src="imagesDodP/OdisseaMythomakya.jpg" alt="Mythomakya Board Game" class="img-fluid related-game-img">
                             </div>
@@ -269,7 +271,7 @@
                     </div>
                     <!-- Image 2: Hercules and the 12 Labors -->
                     <div class="col-12 col-md-4 text-center">
-                        <div class="related-card h-100 d-flex flex-column justify-content-between">
+                        <div class="related-card h-100 d-flex flex-column justify-content-between reveal reveal-zoom">
                             <div class="img-wrapper mb-3">
                                 <img src="imagesDodP/Herculesandthe12Labors03.jpg" alt="Hercules and the 12 Labors Gameplay" class="img-fluid related-game-img">
                             </div>
@@ -278,7 +280,7 @@
                     </div>
                     <!-- Image 3: Dungeons and Dragons -->
                     <div class="col-12 col-md-4 text-center">
-                        <div class="related-card h-100 d-flex flex-column justify-content-between">
+                        <div class="related-card h-100 d-flex flex-column justify-content-between reveal reveal-right">
                             <div class="img-wrapper mb-3">
                                 <img src="imagesDodP/DnD.jpg" alt="Dungeons and Dragons Board Game" class="img-fluid related-game-img">
                             </div>
@@ -293,7 +295,7 @@
         <!-- THE PROJECT SECTION -->
         <section id="the-project" class="custom-section">
             <div class="container">
-                <h2 class="section-title mb-5">The Project</h2>
+                <h2 class="section-title mb-5 reveal">The Project</h2>
                 <!-- SUBSECTION: THE GAME -->
                 <div id="the-game" class="subsection mb-5">
                     <h3>The Game</h3>
@@ -304,27 +306,27 @@
                                 <strong>Dodékathlos</strong> is a hybrid cooperative board game designed for players <strong>aged 11 and above</strong>, accommodating groups of up to five people. It seamlessly combines traditional physical board game components—such as a board, dice, and cards—with a dedicated <strong>mobile application</strong>. The companion app is mandatory, acting as an interactive guide that properly orchestrates the narrative and mechanics throughout the entire experience.
                             </p>
                             <p class="lead-text mt-3">
-                                To succeed, players must work closely together to complete the legendary mythological <strong>Labours of Hercules</strong>. Participants can choose from five distinct characters: <strong>Heracles</strong> (which is mandatory in single-player mode), <strong>Iolaus</strong>, <strong>Athena</strong>, <strong>Theseus</strong>, or <strong>Hermes</strong>. Each character possesses unique special abilities known as <strong>Core Attributes</strong> that are crucial for achieving victory. Every single Labour features a specific <strong>Difficulty Class</strong> and requires a combination of three distinct Core Attributes to be successfully overcome.
+                                To succeed, players must work closely together to complete the legendary mythological <strong>Labours of Hercules</strong>. Participants can choose from five distinct characters: <strong>Hercules</strong> (which is mandatory in single-player mode), <strong>Iolaus</strong>, <strong>Athena</strong>, <strong>Theseus</strong>, or <strong>Hermes</strong>. Each character possesses unique special abilities known as <strong>Core Attributes</strong> that are crucial for achieving victory. Every single Labour features a specific <strong>Difficulty Class</strong> and requires a combination of three distinct Core Attributes to be successfully overcome.
                             </p>
                     </div>
                     </div>
                     <!-- CHARACTERS CARDS -->
-                    <div class="row justify-content-center mb-5">
+                    <div class="row justify-content-center mb">
                     <div class="col-12 col-xl-10">
                     <div class="character-cards-grid">
                         <!-- First row: 3 Cards -->
                         <div class="row g-4 justify-content-center mb-4">
-                        <div class="col-4 text-center">
+                        <div class="col-4 text-center reveal reveal-zoom">
                         <div class="char-card-wrapper">
                             <img src="imagesDodP/HeraclesCard.jpg" alt="Heracles Character Card" class="img-fluid character-card-img">
                         </div>
                         </div>
-                        <div class="col-4 text-center">
+                        <div class="col-4 text-center reveal reveal-zoom">
                         <div class="char-card-wrapper">
                             <img src="imagesDodP/IolaoCard.jpg" alt="Iolaus Character Card" class="img-fluid character-card-img">
                         </div>
                         </div>
-                        <div class="col-4 text-center">
+                        <div class="col-4 text-center reveal reveal-zoom">
                         <div class="char-card-wrapper">
                             <img src="imagesDodP/AthenaCard.jpg" alt="Athena Character Card" class="img-fluid character-card-img">
                         </div>
@@ -332,12 +334,12 @@
                         </div>
                         <!-- Second row: 2 Cards -->
                         <div class="row g-4 justify-content-center">
-                        <div class="col-4 text-center">
+                        <div class="col-4 text-center reveal reveal-zoom">
                         <div class="char-card-wrapper">
                             <img src="imagesDodP/TeseoCard.jpg" alt="Theseus Character Card" class="img-fluid character-card-img">
                         </div>
                         </div>
-                        <div class="col-4 text-center">
+                        <div class="col-4 text-center reveal reveal-zoom">
                         <div class="char-card-wrapper">
                             <img src="imagesDodP/HermesCard.jpg" alt="Hermes Character Card" class="img-fluid character-card-img">
                         </div>
@@ -346,6 +348,7 @@
                     </div>
                     </div>
                     </div>
+                    <p></p>
                     <div class="row mb-5">
                     <div class="col-12">
                         <p class="lead-text">
@@ -358,19 +361,19 @@
                     </div>
                     <!-- BOARDS AND NIKE IMAGES -->
                     <div class="row g-5 justify-content-center align-items-end mt-4">
-                            <div class="col-12 col-md-4 text-center">
+                            <div class="col-12 col-md-4 text-center reveal reveal-left">
                             <div class="board-card">
                                 <img src="imagesDodP/Board6.jpg" alt="Short Modality Game Board" class="img-fluid game-component-img">
                                 <p class="small-caption mt-2">Short Modality Board (6 Tasks)</p>
                             </div>
                             </div>
-                            <div class="col-12 col-md-4 text-center">
+                            <div class="col-12 col-md-4 text-center reveal reveal-zoom">
                             <div class="board-card">
                                 <img src="imagesDodP/Board12.jpg" alt="Long Modality Game Board" class="img-fluid game-component-img">
                                 <p class="small-caption mt-2">Long Modality Board (12 Tasks)</p>
                             </div>
                             </div>
-                            <div class="col-12 col-md-4 text-center">
+                            <div class="col-12 col-md-4 text-center reveal reveal-right">
                             <div class="board-card">
                                 <img src="imagesDodP/NikeCard.jpg" alt="Nike of Paionios Guide Card" class="img-fluid game-component-img">
                                 <p class="small-caption mt-2">The Nike of Paionios (In-Game Guide)</p>
@@ -386,7 +389,7 @@
                         </div>
                     </div>
                     <!-- CHARACTERS TABLE AND CORE ATTRIBUTES -->
-                    <div class="row justify-content-center mb-5">
+                    <div class="row justify-content-center mb-5 reveal reveal-zoom">
                         <div class="col-12 col-md-10 col-lg-8">
                             <div class="table-responsive shadow-sm rounded">
                                 <table class="table table-bordered table-striped align-middle text-center mb-0 bg-white">
@@ -402,7 +405,7 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <th scope="row" class="text-start ps-4 table-light">Heracles</th>
+                                            <th scope="row" class="text-start ps-4 table-light">Hercules</th>
                                             <td><strong>5</strong></td>
                                             <td>3</td>
                                             <td>1</td>
@@ -469,7 +472,7 @@
                         </div>
                         
                         <!-- IMAGES OF PERIL AND AID DECK -->
-                        <div class="col-12 col-lg-5">
+                        <div class="col-12 col-lg-5 reveal reveal-right">
                             <div class="row g-3 justify-content-center">
                                 <div class="col-6 text-center">
                                     <div class="deck-card-wrapper">
@@ -495,14 +498,14 @@
                                 For more detailed information regarding setup, full cooperative rules, and the complete list of Difficulty Classes, you can download the comprehensive guide below:
                             </p>
                             <!-- Download Bottom of the PDF -->
-                            <a href="Dodékathlos Instruction pdf.pdf" class="btn btn-outline-dark btn-lg px-4 py-2 shadow-sm transition-btn" download>
+                            <a href="Dodékathlos Instructions.pdf" class="btn btn-outline-dark btn-lg px-4 py-2 shadow-sm transition-btn" download>
                                 <i class="bi bi-file-earmark-pdf-fill me-2"></i> Download Full Game Instructions (PDF)
                             </a>
                         </div>
                     </div>
                     <!-- THE GAMEPLAY LOOP -->
                     <div>
-                        <div class="col-12">
+                        <div class="col-12 reveal">
                             <h4 class="h5 text-uppercase fw-bold mb-3" style="color: #dfb84c; letter-spacing: 1px;">The Gameplay Loop</h4>
                             <p class="lead-text">
                                 To begin the adventure, players open the physical board and initialize the companion mobile application. They input the number of participants, select their preferred game length (Short or Long Modality), and choose their mythological characters. The <strong>Nike of Paionios</strong> then introduces the myth of Hercules to set the stage. 
@@ -514,7 +517,7 @@
                     </div>
                     <!-- FLOWCHART IMAGE --> 
                     <div class="row justify-content-center mt-4 mb-5">
-                        <div class="col-12 col-xl-10 text-center">
+                        <div class="col-12 col-xl-10 text-center reveal reveal-zoom">
                             <div class="flowchart-container p-3 rounded">
                                 <img src="imagesDodP/GameFlowchart.jpg" alt="Dodékathlos Game Flowchart" class="img-fluid flowchart-img">
                                 <p class="small-caption mt-3">Figure: Detailed step-by-step Gameplay Loop and decision paths.</p>
@@ -522,7 +525,7 @@
                         </div>
                     </div>
                     <!-- PHIGITAL INTEGRATION -->
-                    <div class="row mb-5">
+                    <div class="row mb-5 reveal">
                         <div class="col-12">
                             <h4 class="h5 text-uppercase fw-bold mb-3" style="color: #dfb84c; letter-spacing: 1px;">Phygital Interaction & Museum Integration</h4>
                             <p class="lead-text">
@@ -532,13 +535,17 @@
                                 To bridge the gap between home entertainment and cultural heritage, physical <strong>QR codes</strong> are strategically placed near the metopes inside the museum galleries. This layout serves as a <strong>real-world expansion</strong> of the tabletop experience, directly triggering the unlockable Special Perks on the physical hero cards and turning the museum visit into an active, gamified journey.
                             </p>
                         </div>
+                    <!--THE PROROTYPE-->
+                    <div class="row mb-5">
+                        <p>We have developed a protype of the game app using figma, you can explore it <a href="https://www.figma.com/proto/4wo5KnHM15ppjkBdPs2DxA/Untitled?node-id=0-1&t=LbT10O5Dmxjiw1Rh-1">here</a></p>
+                    </div>
                     </div>
 
                     
                 </div> <!-- End of The Game -->
 
                 <!-- SUBSECTION: USER JOURNEY -->
-                <div id="user-journey" class="subsection mb-5">
+                <div id="user-journey" class="subsection mb-5 reveal">
                     <h3>User Journey</h3>
     
                     <div class="row mt-4">
@@ -551,7 +558,8 @@
                     <!-- 2: ONBOARDING -->
                     <p class="lead-text mb-4">
                     <strong class="journey-gold-title">Onboarding:</strong> 
-                    Players realize they can choose their environment: they can play directly inside the museum, outdoors in the surrounding park, or back at home. The app is intuitive, immediately easing players into the game with a smooth introduction to the core scoring and Hourglass time mechanics.
+                    Players realize they can choose their environment: they can play directly inside the museum, outdoors in the surrounding park, or back at home. 
+                    The app is intuitive and immediately immerses players in the game, smoothly guiding them through the fundamental scoring mechanics and the Hourglass mechanic.
                     </p>
                     <!-- 3: CAPTURE/INTERACTION -->
                     <p class="lead-text mb-4">
@@ -561,14 +569,14 @@
                     <!-- 4: AFTER EXPERIENCE -->
                     <p class="lead-text">
                     <strong class="journey-gold-title">After experience:</strong> 
-                    Win or lose, players finish the session feeling satisfied but craving more. Nike announces that the adventure continues in the real world. This creates a powerful incentive for players to visit (or return to) the physical Archaeological Museum of Olympia to scan QR codes and permanently unlock character perks for their next playthrough at home.
+                    Win or lose, players finish the session feeling satisfied but craving more. Nike announces that the adventure continues in the real world. This creates a powerful incentive for players to visit (or return to) the Archaeological Museum of Olympia to scan QR codes and permanently unlock character perks for their next playthrough at home.
                     </p>
                     </div>
                     </div>
                 </div>
 
                 <!-- SUBSECTION: CONCLUSION AND FURTHER DEVELOPMENT -->
-                <div id="conclusion-development" class="subsection mb-5">
+                <div id="conclusion-development" class="subsection mb-5 reveal">
                     <h3>Conclusion & Further Development</h3>
                     <div class="row">
                     <div class="col-12">
@@ -576,10 +584,10 @@
                     <strong>Dodékathlos</strong> is a project that aims to help the <strong>Archaeological Museum of Olympia</strong> in those aspects where something is missing. The game will contribute to <strong>modernizing the museum</strong> and improving the visit toward an involving relationship between the environment and the visitors. Apart from that, both an <strong>educational and a social aspect</strong> are touched: players will learn something more specific about archaeological discoveries and Greek myths. Anyone will be involved in the game with a <strong>specific role</strong>, so nobody will be excluded and everyone will bring a special contribution in order to win.
                     </p>
                     <p class="lead-text mb-4">
-                    Limitations of the project rely on the fact it will be <strong>promoted only by the museum’s channels</strong>, so maybe it would not reach a big audience worldwide. In addition to that, those already <strong>well-versed in the subject matter</strong> may find the game lacking in depth and, consequently, boring. 
+                    Limitations of the project rely on the fact that it will be <strong>promoted only by the museum’s channels</strong>, so maybe it would not reach a big audience worldwide. In addition to that, those already <strong>well-versed in the subject matter</strong> may find the game lacking in depth and, consequently, boring. 
                     </p>
                     <p class="lead-text">
-                    The team will direct <strong>future efforts</strong> in expanding the game with <strong>other works of art</strong> inside the museum or the theme of Hercules, adding some <strong>technologies inside the building</strong> (like screens or on-site videogames), apart from promoting at least this early version to the widest possible audience.
+                    In conclusion, we would like to emphasize that this is only a basic version of the game; if successful, we are committed to introducing <strong>new expansions</strong> to keep the experience <strong>fresh and original</strong>. The team intends, for example, to focus future efforts on <strong>incorporating other works of art</strong> from the museum into the game or <strong>delving deeper</strong> into the figure of Hercules. Another future goal is the integration of <strong>new technologies</strong> —such as screens or gaming stations— within the building, to enrich the on-site experience.
                     </p>
                     </div>
                     </div>
@@ -589,8 +597,8 @@
             </div> <!-- End of User Journey -->
         </section> <!-- End of The Project -->
 
-        <section id="team" class="custom-section alt-bg">
-            <div class="container">
+        <section id="team" class="custom-section alt-bg reveal">
+            <div class="container reveal reveal-zoom">
                 <h2 class="section-title">The Team</h2>
                 
                 <div class="row g-5 justify-content-center mt-3">
@@ -660,5 +668,25 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const observerOptions = {
+      threshold: 0.05 // The effect starts when the 0.05% of the section is in the screen 
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('reveal-active');
+          observer.unobserve(entry.target); // The animation occurs only the first time
+        }
+      });
+    }, observerOptions);
+
+    // Select only the class with the common base 
+    const elementsToAnimate = document.querySelectorAll('.reveal');
+    elementsToAnimate.forEach(el => observer.observe(el));
+    });
+    </script>
 </body>
 </html>

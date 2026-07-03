@@ -576,3 +576,26 @@ footer strong {
     color: #c5a880;
     font-variant: small-caps; 
 }
+
+/* ==========================================================================
+   SCROLL ANIMATION
+   ========================================================================== */
+
+/* 1. Common rule for all the elemnts you want to animate */
+.reveal {
+  opacity: 0;
+  transition: opacity 1.0s ease-out, transform 1.0s ease-out;
+}
+
+/* 2. Initial state of the animation */
+.reveal.reveal-bottom { transform: translateY(50px); }
+.reveal.reveal-top    { transform: translateY(-50px); }
+.reveal.reveal-left   { transform: translateX(-80px); }
+.reveal.reveal-right  { transform: translateX(80px); }
+.reveal.reveal-zoom   { transform: scale(0.8); }
+
+/* 3. Final state of the animation */
+.reveal.reveal-active {
+  opacity: 1;
+  transform: translate(0, 0) scale(1);
+}
