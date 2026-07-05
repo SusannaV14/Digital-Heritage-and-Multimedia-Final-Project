@@ -1,4 +1,3 @@
-/* STYLESHEET DEFINITION */
 /* RESET AND BASIC SETTINGS */
 html {
     scroll-behavior: smooth;
@@ -397,7 +396,7 @@ h1, h2, h3, .logo, .main-nav-link, .team-member-name {
 }
 
 .game-component-img {
-    max-height: 280px; 
+    max-height: 380px; 
     width: auto;
     max-width: 100%;
     object-fit: contain;
@@ -599,4 +598,38 @@ footer strong {
 .reveal.reveal-active {
   opacity: 1;
   transform: translate(0, 0) scale(1);
+}
+
+/* ==========================================================================
+   FIGMA EMBED RESPONSIVE - RIGHT ALIGNED PHONE MODE
+   ========================================================================== */
+.figma-prototype-container {
+    width: 100%;
+    max-width: 380px; /* Mantiene le dimensioni del telefono che ti piacevano */
+}
+
+.figma-prototype-wrapper iframe {
+    width: 100%;
+    /* Utilizziamo un aspect-ratio verticale (es. 9/16 o simile) */
+    aspect-ratio: 9 / 16; 
+    height: auto; /* Lasciamo che l'altezza si calcoli da sola in base alla larghezza */
+    max-height: 70vh; /* Impedisce che diventi troppo alto rispetto allo schermo del PC */
+    display: block;
+}
+
+.figma-prototype-wrapper iframe {
+    width: 100%;
+    height: 75vh; /* Altezza bloccata per intero nello schermo del PC senza scroll */
+    max-height: 680px; 
+    display: block;
+}
+
+/* Ottimizzazione per schermi piccoli (smartphone) */
+@media (max-width: 480px) {
+    .figma-prototype-container {
+        max-width: 100%; 
+    }
+    .figma-prototype-wrapper iframe {
+        height: 550px;
+    }
 }
