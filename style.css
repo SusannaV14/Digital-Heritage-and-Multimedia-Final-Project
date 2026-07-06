@@ -605,26 +605,25 @@ footer strong {
    ========================================================================== */
 .figma-prototype-container {
     width: 100%;
-    max-width: 380px; /* Mantiene le dimensioni del telefono che ti piacevano */
+    max-width: 380px; 
 }
 
 .figma-prototype-wrapper iframe {
     width: 100%;
-    /* Utilizziamo un aspect-ratio verticale (es. 9/16 o simile) */
     aspect-ratio: 9 / 16; 
-    height: auto; /* Lasciamo che l'altezza si calcoli da sola in base alla larghezza */
-    max-height: 70vh; /* Impedisce che diventi troppo alto rispetto allo schermo del PC */
+    height: auto; 
+    max-height: 70vh; 
     display: block;
 }
 
 .figma-prototype-wrapper iframe {
     width: 100%;
-    height: 75vh; /* Altezza bloccata per intero nello schermo del PC senza scroll */
+    height: 75vh; 
     max-height: 680px; 
     display: block;
 }
 
-/* Ottimizzazione per schermi piccoli (smartphone) */
+/* smartphone optimisazion */
 @media (max-width: 480px) {
     .figma-prototype-container {
         max-width: 100%; 
