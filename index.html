@@ -86,7 +86,7 @@
                 <div class="row">
                     <div class="col-12">
                         <p class="lead-text"><strong>Dodékathlos</strong> is an innovative board game that seamlessly integrates physical components with digital tools. This project was developed as the final examination for the <em>Digital Heritage and Multimedia</em> course, within the Master's Degree in <em>Digital Humanities and Digital Knowledge</em> (DHDK) at the <strong>University of Bologna</strong>.</p>
-                        <p class="lead-text">Inspired by the legendary Twelve Labors of Hercules, the game is uniquely designed to serve as both an engaging and educational activity tailored for the <strong>Archaeological Museum of Olympia</strong>. Before crafting the core gameplay and interaction mechanics, our team conducted an in-depth museum analysis to align the experience with the venue's rich heritage.</p>
+                        <p class="lead-text">Inspired by the legendary Twelve Labours of Hercules, the game is uniquely designed to serve as both an engaging and educational activity tailored for the <strong>Archaeological Museum of Olympia</strong>. Before crafting the core gameplay and interaction mechanics, our team conducted an in-depth museum analysis to align the experience with the venue's rich heritage.</p>
                     </div>
                 </div>
             </div>
@@ -124,7 +124,7 @@
 
                       </div>
                       <p></p>
-                      <p>Of particular significance to our project are the monumental remnants of the sculpted metopes from the ancient <strong>Temple of Zeus</strong>. These masterpieces vividly depict the <strong>Twelve Labors of Hercules</strong>. Interestingly, the architectural structure of this temple is believed to be the historical reason why the canon of Hercules' exploits was fixed at exactly twelve, as Greek mythology actually records numerous other heroic deeds performed by the demigod.</p>
+                      <p>Of particular significance to our project are the monumental remnants of the sculpted metopes from the ancient <strong>Temple of Zeus</strong>. These masterpieces vividly depict the <strong>Twelve Labours of Hercules</strong>. Interestingly, the architectural structure of this temple is believed to be the historical reason why the canon of Hercules' exploits was fixed at exactly twelve, as Greek mythology actually records numerous other heroic deeds performed by the demigod.</p>
     
                       <div class="row my-4 justify-content-center">
                       <div class="col-12 col-md-8 text-center reveal reveal-zoom">
@@ -302,23 +302,78 @@
                     <div class="row mb-5">
                     <div class="col-12">
                         <!-- FULL BOX IMAGE --> 
+<div class="row justify-content-center mt-4 mb-5">
+    <div class="col-12 col-xl-10 text-center reveal reveal-zoom">
+        <div class="transparent-box-container">
+            <img src="AppImages/tabellone-con-tutto.png" alt="Dodékathlos Full Box" class="img-fluid transparent-box-img">
+            <p class="small-caption mt-3">Figure: Full Box with all game components.</p>
+        </div>
+    </div>
+</div>
+
+                    <!-- THE IMPLEMENTATION SECTION -->
+<div class="container my-5">
+    
+    <!-- Title -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <h4 class="h5 text-uppercase fw-bold mb-3" style="color: #dfb84c; letter-spacing: 1px;">The Implementation</h4>
+        </div>
+    </div>
+
+    <!-- FIRST PART: Hybrid Experience (Left Text, Right Board Sketch) -->
+    <div class="row align-items-center mb-5">
+        <!-- Left/Center Column (8 Columns out of 12) -->
+        <div class="col-12 col-lg-8">
+            <p class="lead-text">
+                To bring the project to life, the team focused heavily on creating a <strong>cohesive hybrid ecosystem</strong>, seamlessly integrating the physical core of the game—embodied by the board, tokens, and cards—with a dedicated companion digital application.
+            </p>
+            <p class="lead-text">
+                Physical manipulation of the board, cards, dice, and tokens provides a <strong>constant connection</strong> between the mythological journey and the real-world environment, while the companion application orchestrates the narrative progression and contextual information. The resulting system creates a seamless hybrid experience in which <strong>digital guidance and physical gameplay continuously reinforce one another</strong>, encouraging immersion through the integration of storytelling, game mechanics, and material interaction.
+            </p>
+        </div>
+        
+        <!-- Right Column: Board Sketch (4 Columns out of 12) -->
+        <div class="col-12 col-lg-4 text-center mt-4 mt-lg-0 reveal reveal-right">
+            <div style="border: 2px solid #111111; padding: 6px; background-color: #ffffff; display: inline-block;">
+                <img src="AppImages/bozza tabellone.png" alt="Board game sketch" class="img-fluid" style="max-height: 380px; width: auto; object-fit: contain;">
+            </div>
+            <p class="img-caption mt-2 text-center">a sketch of the board</p>
+        </div>
+    </div>
+
+    <!-- SECOND PART: Parallel Tools & Large Wireframe (Full 12 Columns) -->
+    <div class="row">
+        <!-- Text spans all 12 columns -->
+        <div class="col-12">
+            <p class="lead-text">
+                To develop the project, two complementary tools were employed in parallel: <strong>Twine</strong> was used to simulate the narrative flow and branching interactions, while <strong>Figma</strong> served as the primary environment for designing the application's wireframes, user interface, and navigation structure.
+            </p>
+            <p class="lead-text">Clicking <a href="Dodékathlos_twine.html" style="color: #dfb84c;">here</a> you can explore the Twine.</p>
+        </div>
+    
+        <!-- WIREFRAME IMAGE --> 
                     <div class="row justify-content-center mt-4 mb-5">
                         <div class="col-12 col-xl-10 text-center reveal reveal-zoom">
                             <div class="flowchart-container p-3 rounded">
-                                <img src="AppImages/tabellone-con-tutto.png" alt="Dodékathlos Full Box" class="img-fluid flowchart-img">
-                                <p class="small-caption mt-3">Figure: Full Box with all game components.</p>
+                                <img src="AppImages/wireframe.png" alt="Figma wireframe" class="img-fluid flowchart-img">
+                                <p class="small-caption mt-3">Figure: Full wireframe of the App.</p>
                             </div>
                         </div>
                     </div>
-                        <h4 class="h5 text-uppercase fw-bold mb-3" style="color: #dfb84c; letter-spacing: 1px;">The Game Mechanics</h4>
+    </div>
+
+</div>
+
+<h4 class="h5 text-uppercase fw-bold mb-3" style="color: #dfb84c; letter-spacing: 1px;">The Game Mechanics</h4>
                             <p class="lead-text">
                                 <strong>Dodékathlos</strong> is a hybrid cooperative board game designed for players <strong>aged 11 and above</strong>, accommodating groups of up to five people. It seamlessly combines traditional physical board game components—such as a board, dice, and cards—with a dedicated <strong>mobile application</strong>. The companion app is mandatory, acting as an interactive guide that properly orchestrates the narrative and mechanics throughout the entire experience.
                             </p>
                             <p class="lead-text mt-3">
                                 To succeed, players must work closely together to complete the legendary mythological <strong>Labours of Hercules</strong>. Participants can choose from five distinct characters: <strong>Hercules</strong> (which is mandatory in single-player mode), <strong>Iolaus</strong>, <strong>Athena</strong>, <strong>Theseus</strong>, or <strong>Hermes</strong>. Each character possesses unique special abilities known as <strong>Core Attributes</strong> that are crucial for achieving victory. Every single Labour features a specific <strong>Difficulty Class</strong> and requires a combination of three distinct Core Attributes to be successfully overcome.
                             </p>
-                    </div>
-                    </div>
+
+                    
                     <!-- CHARACTERS CARDS -->
                     <div class="row justify-content-center mb">
                     <div class="col-12 col-xl-10">
@@ -362,6 +417,9 @@
                     <div class="col-12">
                         <p class="lead-text">
                             The game offers two distinct game modes tailored to the players' preferences: the <strong>Short Modality</strong> (requiring six tasks to complete) and the <strong>Long Modality</strong> (requiring all twelve tasks). The ultimate objective is to successfully secure at least <strong>four Labours of Hercules</strong> in the short mode, or at least <strong>eight Labours</strong> when tackling the long mode.
+                        </p>
+                        <p class="lead-text">
+                            The board was designed around a geographical representation of <strong>Ancient Greece</strong>, visually locating each of Hercules' Labours in the regions where they are traditionally believed to have taken place. At the beginning of each session, players assemble the board according to the selected game mode and place the Labour cards face down, revealing only their numerical identifiers. As the adventure progresses, the Nike instructs players to turn over the corresponding card, unveiling the illustration and introducing the next challenge within the narrative.
                         </p>
                     </div>
                     </div>
@@ -475,14 +533,11 @@
                             </div>
                         </div>
                     </div>
-                    <!-- TIME AND SPECIAL PERKS -->
+                    <!-- LIFE -->
                     <div class="row mb-5">
                         <div class="col-12">
                             <p class="lead-text">
-                                <strong>Time is a restricted resource</strong> managed directly by the application. Players start their epic journey with a pool of twelve <strong>Hourglasses</strong> in Short Mode and twenty-six in Long Mode. Simply entering and attempting a new Labour costs one Hourglass. If a dice roll fails, players can spend one additional Hourglass to retry immediately. However, a Labour can be attempted a <strong>maximum of three times</strong> (costing a total of three Hourglasses) before it results in automatic defeat and forces a retreat.
-                            </p>
-                            <p class="lead-text mt-3">
-                                To encourage real-world exploration, visiting the Archaeological Museum of Olympia and scanning the physical <strong>QR codes</strong> hidden near the exhibits will permanently unlock <strong>Special Perks</strong> assigned to the character cards. These advantages act as persistent gameplay tools designed to facilitate victory in all future matches at home.
+                                <strong>Life  is a restricted resource</strong> managed directly by the application. Players start each Labour with <strong>three Hourglasses</strong>. Simply entering and attempting a new Labour costs one Hourglass. If a dice roll fails, players can spend one additional Hourglass to retry immediately. However, a Labour can be attempted a <strong>maximum of three times</strong> (costing the total of three Hourglasses) before it results in automatic defeat.
                             </p>
                         </div>
                     </div>
@@ -516,15 +571,21 @@
                                 </div>
                             </div>
                         </div>
+                        <!--SPECIAL PERCKS -->
+                            <div class="col-12">
+                                <p class="lead-text mt-3">
+                                To encourage real-world exploration, visiting the Archaeological Museum of Olympia and scanning the physical <strong>QR codes</strong> hidden near the exhibits will permanently unlock <strong>Special Perks</strong> assigned to the character cards. These advantages act as persistent gameplay tools designed to facilitate victory in all future matches at home.
+                                </p>
+                            </div>
                     </div>
-                    <!-- DOWNLOAD RULEBOOK NEW-->
+                    <!-- DOWNLOAD RULEBOOK -->
                     <div>
                         <div class="col-12 text-center">
                             <p class="lead-text mb-4">
                                 For more detailed information regarding setup, full cooperative rules, and the complete list of Difficulty Classes, you can download the comprehensive guide below:
                             </p>
                             <!-- Download Bottom of the PDF -->
-                            <a href="Dodékathlos Board Game Instructions (1).pdf" class="btn btn-outline-dark btn-lg px-4 py-2 shadow-sm transition-btn" download>
+                            <a href="Dodékathlos Board Game Instructions (2).pdf" class="btn btn-outline-dark btn-lg px-4 py-2 shadow-sm transition-btn" download>
                                 <i class="bi bi-file-earmark-pdf-fill me-2"></i> Download Full Game Instructions (PDF)
                             </a>
                         </div>
@@ -560,7 +621,7 @@
             <h4 class="h5 text-uppercase fw-bold mb-3" style="color: #dfb84c; letter-spacing: 1px;">Experience Dodékathlos</h4>
             
             <p class="lead-text">
-                If you would like a preview of the game, you can test the <strong>interactive prototype</strong> we developed on <strong>Figma</strong>. In addition, we created an interactive narrative experience using <strong>Twine</strong>, allowing you to dive deeper into the mythological branching stories and choices that drive the adventure.
+                If you would like a preview of the game, you can test the <strong>interactive prototype</strong> we developed on <strong>Figma</strong>. 
             </p>
 
             <p class="lead-text">
@@ -571,20 +632,13 @@
                 Feel free to try it out directly in the <strong>interactive preview</strong> on the right, or click the <strong>link</strong> below to launch it on Figma.
             </p>
 
-            <p class="lead-text">
-                While <a href="Dod_kathlos.html" style="color: #dfb84c;">clickig here</a> you can explore the <strong>Twine</strong>.
-            </p>
         </div>
         
         <!-- Right Column: Vertical Figma Prototype -->
         <div class="col-lg-6 d-flex justify-content-center">
             <div class="figma-prototype-container">
                 <div class="figma-prototype-wrapper">
-                    <iframe 
-                        style="border: 3px solid #111111; background: #ffffff;" 
-                        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F4wo5KnHM15ppjkBdPs2DxA%2FUntitled%3Fnode-id%3D10-1968%26t%3DLbT10O5Dmxjiw1Rh-1%26starting-point-node-id%3D10%253A1836" 
-                        allowfullscreen>
-                    </iframe>
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="427" height="907" src="https://embed.figma.com/proto/4wo5KnHM15ppjkBdPs2DxA/Untitled?node-id=10-1836&viewport=140%2C-179%2C0.23&scaling=scale-down&content-scaling=fixed&starting-point-node-id=10%3A1836&show-proto-sidebar=1&page-id=0%3A1&embed-host=share" allowfullscreen></iframe>
                 </div>
                 
                 <!-- English Caption under the prototype -->
@@ -598,16 +652,6 @@
                 </p>
             </div>
         </div>
-
-                    <!-- WIREFRAME IMAGE --> 
-                    <div class="row justify-content-center mt-4 mb-5">
-                        <div class="col-12 col-xl-10 text-center reveal reveal-zoom">
-                            <div class="flowchart-container p-3 rounded">
-                                <img src="AppImages/wireframe.png" alt="Figma wireframe" class="img-fluid flowchart-img">
-                                <p class="small-caption mt-3">Figure: Full wireframe of the figma prototype.</p>
-                            </div>
-                        </div>
-                    </div>
 
                     </div>
                     </div>
